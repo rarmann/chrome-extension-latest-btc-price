@@ -1,0 +1,11 @@
+{
+  "name": "BTC/EUR price",
+  "version": "1.0.0",
+  "description": "latest Bitcoin price in EUR",
+  "manifest_version": 3,
+  "author": "Rick Armann",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "BTC/EUR price"
+  }
+}
