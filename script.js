@@ -1,4 +1,4 @@
-function bitprice() {
+function btcprice() {
   fetch("https://blockchain.info/ticker")
     .then((response) => {
       return response.json();
@@ -6,8 +6,8 @@ function bitprice() {
 
     .then((data) => {
       console.log(data);
-      document.querySelector("#btckurs").insertAdjacentHTML("afterbegin", data.EUR["15m"] + " " + data.EUR.symbol);
+      document.querySelector("#btcprice").insertAdjacentHTML("afterbegin", data.EUR["15m"] + " " + data.EUR.symbol);
     });
 }
 
-bitprice();
+btcprice();
